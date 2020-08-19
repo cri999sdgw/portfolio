@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="../globalstyle.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <button class="backButton" onclick="location.href='../index.html';">Back</button>
+    <h1 class="titleField">Hangman</h1>
+    <div class="fieldLeft">
+        <h3>Exercise</h3> 
+        <p>Make a playable Hangman Game, programmed in the language C!</p>
+        <h3>Game Description</h3>
+        <p>
+            Hangman is a paper and pencil guessing game for two or more players. One player thinks 
+            of a word and the other(s) tries to guess it by suggesting letters 
+            within a certain number of guesses.
+        </p>
+        <h3>Game Setup</h3>
+        <p>
+            The game needs a word to start, which is provided in a seperate config file.
+        </p>
+        <h3>User Input</h3>
+        <p>
+            The user needs to input his guess.
+        </p>
+        <h3>Example Config File</h3>
+            <img src="pics/hangman_config.png" alt="hangman_config" style="width:25vw;">
+        <h3>Environment</h3>
+        <p>Since this is a console game and no other visualization is implemented, the IDE was
+            not that important. I chose Visual Studio Code (vsc), since it is my main text editor.<br>
+            I programmed on MacOS and used the terminal for compiling and executing the program. Since
+            the reference OS of the University (Technical University of Graz) was Linux, i used an external
+            linux Server to test the game. I reached it with an ssh connection via the macOS terminal. <br>
+
+        </p>
+        <h3>Restrictions</h3>
+        <p>The usage of external libraries was prohibited (expect the standard libraries). To make it run, 
+            I used three different libraries: <br> - stdio.h <br> - stdlib.h <br>
+            Memory management is very important, when you program in C, so i had to allocate, reallocate and
+            free the space i needed. For checking if everything worked correct, I used Valgrind at the external
+            Linux System.</p>
+        <h3>Purpose</h3>
+        <p>The whole purpose of the program was, to pass a subject for my Degree in Computer Science.
+        the subject was named "Programming 1", where I made other small projects like Solitair or the
+        Caesar Encryption, which are also shown on the website. The main Goal of the Subject was, to
+        teach the fundamentals of the programming language C. 
+        </p>
+        <h3>What did I learn?</h3>
+        <p>I learned the fundamentals of the programming language C and the importance of efficient
+            memory management. I learned how to use References and Pointers.
+        </p>
+        <h3>Stats</h3>
+        <p>To make the program work, i used: <br> - 425 lines of code <br> - 9 functions</p>
+    </div>
+    <div class="fieldRight">
+        <h3>Example Game</h3>
+        <p>Gamefield</p>
+            <img src="pics/hangman_1.png" alt="hangman_1" style="width:25vw;">
+        <p>Character can now be entered. For example we guess the character <code>a</code></p>
+            <img src="pics/hangman_2.png" alt="hangman_2" style="width:25vw;">
+        <p>Since 'A' is already revealed, there can not be other 'A's in the word, but it was not
+            wrong, so we dont get a minus point. Next try is <code>e</code></p>
+            <img src="pics/hangman_3.png" alt="hangman_3" style="width:25vw;">
+        <p>Right choice, showing us new informations. Let's go with <code>i</code> </p>
+            <img src="pics/hangman_4.png" alt="hangman_4" style="width:25vw;">
+        <p>Also right, now lets make a wrong choice, by guessing <code>o</code></p>
+            <img src="pics/hangman_5.png" alt="hangman_5" style="width:25vw;">
+        <p>Wrong, so the counter went from (0) to (1). Let's end this game and win.</p>
+            <img src="pics/hangman_6.png" alt="hangman_6" style="width:25vw;">
+        <p>If you want to play more games, you can stack the words in the config file and
+            the game will proceed, after the first word was guessed, with the second word. <br>
+            Let's try to lose a game to see the outcome. I added a second word to show how
+            the program handles it.</p>
+            <img src="pics/hangman_7.png" alt="hangman_7" style="width:25vw;">
+        <p> The <code>ApplePie (x.x)</code> output shows the user the word he didn't guess.</p>
+    </div>
+</body>

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="../globalstyle.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <button class="backButton" onclick="location.href='../index.html';">Back</button>
+    <h1 class="titleField">Solitair</h1>
+    <div class="fieldLeft">
+        <h3>Exercise</h3> 
+        <p>Make a playable Solitair Game, programmed in the language C!</p>
+        <h3>Game Description</h3>
+        <p>
+            The objective of the game is to release and play into position certain cards 
+            to build up each foundation, in sequence and in suit, from the ace through the king. 
+            The ultimate objective is to build the whole pack onto the foundations, and if that 
+            can be done, the Solitaire game is won.
+        </p>
+        <h3>Game Setup</h3>
+        <p>
+            The game is played with 52 Cards which are initialized trough a config file. The Program
+            then picks the given order and sets up the game field. The Game can now be played!
+        </p>
+        <h3>User Input</h3>
+        <p>
+            For displaying the commands: <code>help</code><br>
+            For moving a card: <code>move #color #value to #stacknumber</code><br>
+            For exit the game: <code>exit</code>
+        </p>
+        <h3>Example Config File</h3>
+            <img src="pics/solitair_configFile.png" alt="solitair_configFile" style="height:600px;">
+        <h3>Environment</h3>
+        <p>Since this is a console game and no other visualization is implemented, the IDE was
+            not that important. I chose Visual Studio Code (vsc), since it is my main text editor.<br>
+            I programmed on MacOS and used the terminal for compiling and executing the program. Since
+            the reference OS of the University (Technical University of Graz) was Linux, i used an external
+            linux Server to test the game. I reached it with an ssh connection via the macOS terminal. <br>
+
+        </p>
+        <h3>Restrictions</h3>
+        <p>The usage of external libraries was prohibited (expect the standard libraries). To make it run, 
+            I used three different libraries: <br> - stdio.h <br> - string.h <br> - stdlib.h <br>
+            Memory management is very important, when you program in C, so i had to allocate, reallocate and
+            free the space i needed. For checking if everything worked correct, I used Valgrind at the external
+            Linux System.</p>
+        <h3>Purpose</h3>
+        <p>The whole purpose of the program was, to pass a subject for my Degree in Computer Science.
+        the subject was named "Programming 1", where I made other small projects like Hangman or the
+        Caesar Encryption, which are also shown on the website. The main Goal of the Subject was, to
+        teach the fundamentals of the programming language C. 
+        </p>
+        <h3>What did I learn?</h3>
+        <p>I learned the fundamentals of the programming language C and the importance of efficient
+            memory management. I learned how to use References and Pointers. Structs, enums and several
+            other data structures where implemented to make the game playable. 
+        </p>
+        <h3>Stats</h3>
+        <p>To make the program work, i used: <br> - 1552 lines of code <br> - 34 functions <br> - 4 enums <br> - 1 struct</p>
+        <h3>Error handling</h3>
+        <p>If the user makes a wrong input, the program can react to it like in the followed example</p>
+            <img src="pics/solitair_7.png" alt="solitair_7" style="width:25vw;">
+        
+    </div>
+    <div class="fieldRight">
+        <h3>Example Game</h3>
+        <p>Gamefield</p>
+            <img src="pics/solitair_1.png" alt="solitair_1" style="width:25vw;">
+        <p>Commands can now be entered. For example we execute the <code>help</code> command which
+        leads to following screen</p>
+            <img src="pics/solitair_2.png" alt="solitair_2" style="width:25vw;">
+        <p>For moving a card, we can use the <code>move</code> command. We can move
+        the Red-7 from stack number 3 to stack number 4. We execute it with <code>move red 7 to 4</code> </p>
+            <img src="pics/solitair_3.png" alt="solitair_3" style="width:25vw;">
+        <p>Since the Black Ace on stack number 1 can be placed on a new stack, we can move it to
+            stack number 5 (Dep) with the command <code>move move black A to 5</code> </p>
+            <img src="pics/solitair_4.png" alt="solitair_4" style="width:25vw;">
+        <p>On the left, we can get a new card, by placing the Black 6 on stack number 0 to the stack 4.
+            Following command is needed <code> move Black 6 to 4</code></p>
+            <img src="pics/solitair_5.png" alt="solitair_5" style="width:25vw;">
+        <p>To exit the game, just type <code>exit</code> and the program stops</p>
+            <img src="pics/solitair_6.png" alt="solitair_6" style="width:25vw;">
+    </div>
+</body>

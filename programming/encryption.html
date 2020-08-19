@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="../globalstyle.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <button class="backButton" onclick="location.href='../index.html';">Back</button>
+    <h1 class="titleField">Encryption</h1>
+    <div class="fieldLeft">
+        <h3>Exercise</h3> 
+        <p>Encrypt a given text with the Caesar Encryption, programmed in the language C!</p>
+        <h3>Program Description</h3>
+        <p>
+            Method in which each letter in the plaintext is replaced by a letter some fixed number 
+            of positions down the alphabet. The method is named after Julius Caesar, who used it 
+            in his private correspondence. The key by which the characters get shifted is calculated
+            via 256 mod #InputCharLength.
+        </p>
+        <h3>User Input</h3>
+        <p>
+            The user has to do input the text to encode.
+        </p>
+        <h3>Restrictions</h3>
+        <p>The usage of external libraries was prohibited (expect the standard libraries). To make it run, 
+            I used three different libraries: <br> - stdio.h <br> - stdlib.h</p>
+        <h3>Purpose</h3>
+        <p>The whole purpose of the program was, to pass a subject for my Degree in Computer Science.
+        the subject was named "Programming 1", where I made other small projects like Hangman or the
+        the game Solitair, which are also shown on the website. The main Goal of the Subject was, to
+        teach the fundamentals of the programming language C. 
+        </p>
+        <h3>Stats</h3>
+        <p>To make the program work, i used: <br> - 140 lines of code <br> - 4 functions <br> - 1 enum </p>
+        
+    </div>
+    <div class="fieldRight">
+        <h3>Example Execution</h3>
+        <p>Input prompt</p>
+            <img src="pics/encrypt_1.png" alt="encrypt_1" style="width:25vw;">
+        <p>The user gets prompted to input the text to encrypt.</p>
+            <img src="pics/encrypt_2.png" alt="encrypt_2" style="width:25vw;">
+        <p>The user input was <code>abc</code> meaning that the key is 256 mod 3.
+        What is equal to 1, meaning that each character needs to be shifted by 1.
+        Ending up to <code>bcd</code></p>
+        <h3>Another example Execution</h3>
+        <p>Input prompt</p>
+            <img src="pics/encrypt_1.png" alt="encrypt_1" style="width:25vw;">
+        <p>The user gets prompted to input the text to encrypt. Now we chose also
+            whitespaces and a longer text.</p>
+            <img src="pics/encrypt_3.png" alt="encrypt_3" style="width:25vw;">
+        <p>The user input was <code>text to encrypt</code> meaning that the key is 256 mod 13.
+            What is equal to 9, meaning that each character needs to be shifted by 9. If the alphabet
+            has reached the end, it starts all over again. The whitespaces stay the same and are ignored
+            for the length of the input. So this encryption ends up to <code>cngc cx nwlahyc</code></p>
+    </div>
+</body>

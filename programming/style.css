@@ -1,0 +1,66 @@
+body {
+    background-color: #74b9ff;
+    font-family: 'Comic Neue', cursive;
+    animation: transitionRotate 1s;
+}
+
+code {
+    background-color: #eae9ed;
+    border-radius: .125em;
+    padding: .125em;
+}
+
+.titleField {
+    color: black;
+    background-color: #EFC929;
+    border: solid black 2px;
+    width: 30%;
+    margin-top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    font-size: 5vw;
+}
+
+.fieldLeft {
+    position: absolute;
+    color: black;
+    /* background-color: #EFC929; */
+    background-color: #0984e3;
+    border: solid black 2px;
+    width: 40%;
+    margin-left: 2%;
+    padding: 2.5%;
+    padding-top: 1%;
+    border-radius: 20px;
+
+}
+
+.fieldRight {
+    position: absolute;
+    color: black;
+    background-color: #0984e3;
+    border: solid black 2px;
+    width: 40%;
+    margin-left: 50%;
+    padding: 2.5%;
+    padding-top: 1%;
+    border-radius: 20px;
+}
+
+
+@keyframes transitionRotate {
+    from {
+        opacity: 0;
+        transform: rotate(-90deg);
+        width: 0%;
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+        width: 100%;
+    }
+}
