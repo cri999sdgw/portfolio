@@ -2,7 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" media="screen and (max-device-width: 600px)" href="style_phone.css">  
+        <link rel="stylesheet" media="screen and (min-device-width: 600px)" href="style.css">  
         <link rel="stylesheet" href="../globalstyle.css">  
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
@@ -32,7 +33,7 @@
             For exit the game: <code>exit</code>
         </p>
         <h3>Example Config File</h3>
-            <img src="pics/solitair_configFile.png" alt="solitair_configFile" style="height:600px;">
+            <img src="pics/solitair_configFile.png" alt="solitair_configFile" style="height:600px; width: auto;">
         <h3>Environment</h3>
         <p>Since this is a console game and no other visualization is implemented, the IDE was
             not that important. I chose Visual Studio Code (vsc), since it is my main text editor.<br>
@@ -62,26 +63,26 @@
         <p>To make the program work, i used: <br> - 1552 lines of code <br> - 34 functions <br> - 4 enums <br> - 1 struct</p>
         <h3>Error handling</h3>
         <p>If the user makes a wrong input, the program can react to it like in the followed example</p>
-            <img src="pics/solitair_7.png" alt="solitair_7" style="width:25vw;">
+            <img src="pics/solitair_7.png" alt="solitair_7" >
         
     </div>
     <div class="fieldRight">
         <h3>Example Game</h3>
         <p>Gamefield</p>
-            <img src="pics/solitair_1.png" alt="solitair_1" style="width:25vw;">
+            <img src="pics/solitair_1.png" alt="solitair_1" >
         <p>Commands can now be entered. For example we execute the <code>help</code> command which
         leads to following screen</p>
-            <img src="pics/solitair_2.png" alt="solitair_2" style="width:25vw;">
+            <img src="pics/solitair_2.png" alt="solitair_2" >
         <p>For moving a card, we can use the <code>move</code> command. We can move
         the Red-7 from stack number 3 to stack number 4. We execute it with <code>move red 7 to 4</code> </p>
-            <img src="pics/solitair_3.png" alt="solitair_3" style="width:25vw;">
+            <img src="pics/solitair_3.png" alt="solitair_3" >
         <p>Since the Black Ace on stack number 1 can be placed on a new stack, we can move it to
             stack number 5 (Dep) with the command <code>move move black A to 5</code> </p>
-            <img src="pics/solitair_4.png" alt="solitair_4" style="width:25vw;">
+            <img src="pics/solitair_4.png" alt="solitair_4" >
         <p>On the left, we can get a new card, by placing the Black 6 on stack number 0 to the stack 4.
             Following command is needed <code> move Black 6 to 4</code></p>
-            <img src="pics/solitair_5.png" alt="solitair_5" style="width:25vw;">
+            <img src="pics/solitair_5.png" alt="solitair_5" >
         <p>To exit the game, just type <code>exit</code> and the program stops</p>
-            <img src="pics/solitair_6.png" alt="solitair_6" style="width:25vw;">
+            <img src="pics/solitair_6.png" alt="solitair_6" >
     </div>
 </body>

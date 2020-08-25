@@ -2,6 +2,7 @@ body {
     background-color: #74b9ff;
     font-family: 'Comic Neue', cursive;
     animation: transitionRotate 1s;
+    font-size: 3vw;
 }
 
 code {
@@ -11,9 +12,8 @@ code {
 }
 
 img {
-    width: 25vw;
+    width: 55vw;
 }
-
 .titleField {
     color: black;
     background-color: #EFC929;
@@ -30,26 +30,27 @@ img {
 }
 
 .fieldLeft {
-    position: absolute;
+    position: relative;
     color: black;
-    /* background-color: #EFC929; */
     background-color: #0984e3;
     border: solid black 2px;
-    width: 40%;
-    margin-left: 2%;
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 2.5%;
     padding-top: 1%;
     border-radius: 20px;
-
 }
 
 .fieldRight {
-    position: absolute;
+    position: relative;
     color: black;
     background-color: #0984e3;
     border: solid black 2px;
-    width: 40%;
-    margin-left: 50%;
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
     padding: 2.5%;
     padding-top: 1%;
     border-radius: 20px;
