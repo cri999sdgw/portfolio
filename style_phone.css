@@ -1,0 +1,39 @@
+body {
+    background-color: #74b9ff;
+    font-family: 'Comic Neue', cursive;
+    font-size: 4vw;
+}
+
+p {
+    margin-top: 5px;
+}
+
+h1 {
+    font-family: 'Comic Neue', cursive;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 6vw;
+}
+
+.grid-container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 55vh;
+    margin-bottom: 50vh;
+  }
+
+.grid-item {
+    text-align: center;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    width: 230px;
+    height: 250px;
+  }
+  .grid-item:hover {
+      background-color: #0984e3;
+  }
