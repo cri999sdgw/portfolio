@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="../globalstyle.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <button class="backButton" onclick="location.href='../index.html';">Back</button>
+    <h1 class="titleField">Ray-Tracing</h1>
+    <div class="fieldLeft">
+        <h3>Exercise</h3> 
+        <p>Given a set of triangles, implement Ray-Tracing to generate a 3D figure.</p>
+        <h3>Explaination</h3>
+        <p>
+            Implement intersection test between a ray and a set of triangles.
+            One function should find the closest intersection with a triangle along
+            the ray. The ray is given by its start point p and direction d. A triangle
+            is represented as an array of three vertex indices. The position of each
+            vertex can be looked up from the vertex array via the vertex index.
+            triangles points to the first element of an array of num_triangles
+            triangles. If a triangle was hit, return the coordinates of it. <br>
+            We also had to implement Phong-Shading, which is a special treatment of
+            color manipulation.
+        </p>
+        <h3>Given Model</h3>
+        <p>
+            For example the bunny object was split into to different files. First, the .obj file,
+            which explained the main concept of the bunny, like color, light conditions etc.
+            Then there was a .json file, where the coordinates of the triangles where stored. The
+            nodes had 3 different coordinates, consisting of x-Axis, y-Axis and z-Axis.
+        </p>
+        <h3>Environment</h3>
+        <p>The IDE was not that important, so I chose Visual Studio Code (vsc), since it is my main text editor.<br>
+            I programmed on MacOS and used the terminal of linux to compile my code. My compiler machine was based
+            on a Linux distro named KDE-neon. We had to write
+            a Math class, for using 3D-vectors, matrices and similar math structures.
+        </p>
+        <h3>Purpose</h3>
+        <p>The whole purpose of the program was, to pass a subject for my Degree in Computer Science.
+        the subject was named "Computergrafic", where I made a other small projects, consisting of a 3D
+        generated picture for a Cardboard. The main Goal of the Subject was, to
+        teach the fundamentals of Computergrafic and create a good understanding of modern grafical systems. 
+        </p>
+        <h3>What did I learn?</h3>
+        <p>I learned the fundamentals of Computergrafic. How Ray-Tracing works and how computergames manage
+            to make a good visual representation of colors, shadows and much more.
+        </p>
+    </div>
+    <div class="fieldRight">
+        <h3>Example of the working Ray-Tracing implementation</h3>
+        <p>Given Nodes of the triangles (only a few of them)</p>
+            <img src="pics/raytracing_1.png" alt="raytracing_1" style="width:25vw;">
+        <p>Output of Ray-Tracing with Phong-Shading.</p>
+            <img src="pics/raytracing_2.png" alt="raytracing_2" style="width:25vw;">
+    </div>
+</body>
