@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="../globalstyle.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <button class="backButton" onclick="location.href='../index.html';">Back</button>
+    <h1 class="titleField">Databases</h1>
+    <div class="fieldLeft">
+        <h3>Exercise</h3> 
+        <p>Ingest a Database with a given set of data. The programming language can be chosen.
+        </p>
+        <h3>Description</h3>
+        <p>
+            Given is a lot of data describing publications of theses and journals. Who wrote them, in which
+            year they were made public and much more is also included. The Database is a MySQL Database and
+            is visualized with the postgres UI Tool. Create a relational schema and ingest the data.
+        </p>
+        <h3>Time</h3>
+        <p>
+            Since we had a lot of data to ingest, the timing should not exceed more then 3 minutes. The
+            ingest time of the reference system was 21s, which i toped. My ingestion time was 15s using python.
+        </p>
+        <h3>Environment</h3>
+        <p>The IDE i chose was Visual Studio Code (vsc), since it is my main text editor.<br>
+            I programmed on MacOS and used the terminal for compiling and executing the program. <br>
+        </p>
+        <h3>Restrictions</h3>
+        <p>The usage of external libraries was prohibited (expect psycopg2). The whole ingestion
+            needed to execute SQL commands.
+        </p>
+        <h3>Purpose</h3>
+        <p>The whole purpose of the program was, to pass a subject for my Degree in Computer Science.
+        the subject was named "Datamangement". The main Goal of the Subject was, to teach the fundamentals 
+        of Datamangement. 
+        </p>
+        <h3>What did I learn?</h3>
+        <p>I learned the fundamentals of Datamangement. How a Database works, what relational schemas are,
+            how SQL works and much more.
+        </p>
+        <h3>Stats</h3>
+        <p>To make the program work, i used: <br> - 524 lines of code.
+    </div>
+    <div class="fieldRight">
+        <h3>Example Ingestion</h3>
+            <img src="pics/db_1.jpeg" alt="db_1" style="width:25vw;">
+        <p>The whole log of ingestion was printed in the terminal to make it readable and
+            to take track trough the execution.</p>
+        <h3>The corresponding relational schema</h3>
+            <img src="pics/db_2.png" alt="db_2" style="width:25vw;">
+            <img src="pics/db_3.png" alt="db_3" style="width:25vw;">
+        
+    </div>
+</body>
