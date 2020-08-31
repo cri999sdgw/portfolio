@@ -1,6 +1,7 @@
 body {
-    background-color: #74b9ff;
-    font-family: 'Comic Neue', cursive;
+    background-color: #303952;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 p {
@@ -8,7 +9,7 @@ p {
 }
 
 h1 {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -28,10 +29,11 @@ h1 {
 
 .grid-item {
     text-align: center;
-    padding: 0.5vw;
-    width: 100px;
-    height: 120px;
+    padding: 1.2vh;
+    width: 10vw;
+    height: 10vw;
   }
   .grid-item:hover {
       background-color: #0984e3;
+      border-radius: 1vw;
   }
