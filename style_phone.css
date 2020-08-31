@@ -31,8 +31,9 @@ h1 {
     text-align: center;
     padding-left: 4.5vw;
     padding-right: 4.5vw;
-    width: 230px;
-    height: 250px;
+    padding-top: 2vw;
+    width: 25vw;
+    height: 25vw;
   }
   .grid-item:hover {
       background-color: #0984e3;
