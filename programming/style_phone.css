@@ -1,6 +1,7 @@
 body {
-    background-color: #74b9ff;
-    font-family: 'Comic Neue', cursive;
+    background-color: #303952;
+    font-family: 'Roboto', sans-serif;
+    color: black;
     animation: transitionRotate 1s;
     font-size: 3vw;
 }
@@ -18,7 +19,7 @@ img {
     color: black;
     background-color: #EFC929;
     border: solid black 2px;
-    width: 30%;
+    width: 50%;
     margin-top: 5vw;
     margin-left: auto;
     margin-right: auto;
@@ -32,7 +33,7 @@ img {
 .fieldLeft {
     position: relative;
     color: black;
-    background-color: #0984e3;
+    background-color: #8395a7;
     border: solid black 2px;
     width: 75%;
     margin-left: 10%;
@@ -45,7 +46,7 @@ img {
 .fieldRight {
     position: relative;
     color: black;
-    background-color: #0984e3;
+    background-color: #8395a7;
     border: solid black 2px;
     width: 75%;
     margin-left: 10%;
