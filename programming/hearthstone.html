@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" media="screen and (max-device-width: 600px)" href="style_phone.css">  
+        <link rel="stylesheet" media="screen and (min-device-width: 600px)" href="style.css">  
+        <link rel="stylesheet" href="../globalstyle.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <button class="backButton" onclick="location.href='../index.html';">Back</button>
+    <h1 class="titleField">Solitair</h1>
+    <div class="fieldLeft">
+        <h3>Exercise</h3> 
+        <p>Create a game like Hearthstone, programmed in the language C++!</p>
+        <h3>Game Description</h3>
+        <p>
+            The game is played by 2 player. Each having 7 handcards and 7 play fields. The aim is to 
+            attack the enemy with the playcards until he is dead (30 Life Points). You can place your
+            handcards into the field, when you have enough mana. The cards are categorisized in Spell-Cards
+            and Creature-Cards. Spell Cards can not be put on the gamefield, but can be cast. Furthermore
+            each player has a graveyard, where all the killed Creature-Cards are placed. You can also
+            sacrifice a Card, what means, you place the card on the graveyard, and gain 1LP<br>
+            It's a roundbased system, where the players get for each round a certain amount of mana. <br>
+            The first one to kill the enemy wins.
+        </p>
+        <h3>Game Setup</h3>
+        <p>
+            The game needs a config file, which has the .json format and is parsed via the rapidjson istreamwrapper.
+            Each Creature-Card needs these following attributes:<br>  
+            - name [Name of the Creature-Card]<br>  
+            - mana_cost [The mana what is needed to place the Card]<br>  
+            - damage_points [How much damage the card does, when attacking]<br>  
+            - life_points [How many Life points the Card has]<br>  
+            - shield [If a card is placed in the field and has the shield attribute, the player cannot be attacked]<br>  
+            Each Spell-Card needs to have the following attribute:<br>
+            - name [The name of the Spell-Card]<br>
+        </p>
+        <h3>User Input</h3>
+        <p>
+            For displaying the commands: <code>help</code><br>
+            For attacking: <code>attack #x #y</code><br>
+            For placing a Creature-Card: <code>set #x to #y</code><br>
+            For casting a Spell-Card: <code>cast #x</code><br>
+            For sacrificing a Card: <code>sacrifice #x</code><br>
+            For displaying the gamefield: <code>state</code><br>
+            For ending your turn: <code>finish</code><br>
+            For quitting the game: <code>quit</code><br>
+        </p>
+        <h3>Config-File Creature-Card</h3>
+            <img src="pics/hearthstone_configFile.png" alt="hearthstone_configFile" style="width: auto;"><br>
+            This is only one Creature-Card, you can add as much as you want.
+        <h3>Config-File Spell-Card</h3>
+            <img src="pics/hearthstone_configFile2.png" alt="hearthstone_configFile2" style="width: auto;"><br>
+            This is only one Spell Card, you can add some more, but the names of the spell cards are hardcoded.
+            For now, there exist: <br>
+            - Rebirth [Revives the card, who is on top of the graveyard]<br>
+            - Healer [Heals all Creature-Cards for 1LP (Max LP Points are 9)]<br>
+            - Relief [The player has to pick up 3 Cards]<br>
+            - Dracula [Attacks the enemy player by 2LP and heals you for 2LP]<br>
+        <h3>Environment</h3>
+            <p> 
+                The whole game was developed in VSC (Visual Studio Code). It's a console game, which
+                can be played in every UNIX-Console.
+            </p>
+        <h3>Purpose</h3>
+            <p>
+                The whole purpose of the program was, to pass a subject for my Degree in Computer Science.
+                the subject was named "Object Oriented Programming 1". The main Goal of the Subject was, to
+                teach the fundamentals of the programming language C++. 
+            </p>
+        <h3>What did I learn?</h3>
+        <p>I learned the fundamentals of the programming language C++. Inlcuding the usage of classes and 
+            objects. We also used derived classes, for our 2 different Card Types.
+        </p>
+        <h3>Error handling</h3>
+            <p>
+                Also a big part of the project was, to handle wrong inputs and not allowing to make 
+                not valid moves. Speficic error messages were included, to inform the player that i 
+                made a mistake. Since the university had a lot of testcases (In specific 98 for error
+                handling), I'm sure the game is bulletproof to almost every user input.
+            </p>
+    </div>
+    <div class="fieldRight">
+        <h3>Example Game</h3>
+        <p>Player have to input their names, then the game starts</p>
+            <img src="pics/hearthstone_0.png" alt="hearthstone_0" >
+        <p>Since Jim has only 1 Mana, i has to finish his round with the <code>finish</code> command.</p>
+            <img src="pics/hearthstone_1.png" alt="hearthstone_1" >
+        <p>Exactly the same for Taylor <code>finish</code>. </p>
+            <img src="pics/hearthstone_2.png" alt="hearthstone_2" >
+        <p>Jim now got some mana and can place the Creature_Card number 4 (Simone) on the gamefield
+            <code>set 4 to 1</code>. But since the card was placed this round, she sleeps. Meaning that
+            Jim has to wait another round to attack. To see the move he made, he can execute the 
+        <code>state</code> command.</p>
+            <img src="pics/hearthstone_3.png" alt="hearthstone_3" >
+        <p> Taylor follows another strategie, he saves his mana to place a stronger figure next round. So he executes
+            the <code>finish</code> command. Jim now attacks the enemy player with his Creature-Card Simone. The attack
+            damages the enemy player by 1LP. He executes the <code>attack 0 with 1</code> command. Since he already attacked,
+            the == signe is displayed in the middle of the card, which means, that he can not attack another time.
+        </p>
+            <img src="pics/hearthstone_4.png" alt="hearthstone_4" >
+        <p>Since the game goes around 10-20minutes, I will not show the whole game. So lets say Taylor surrends with the 
+            <code>quit</code> command.
+        </p>
+            <img src="pics/hearthstone_5.png" alt="hearthstone_5" >
+        <p>Since Taylor surrended, Jim won!</p>
+    </div>
+</body>
